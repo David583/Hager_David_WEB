@@ -1,0 +1,64 @@
+<p id = "PageTitle" style = "text-align: center">Rendelés leadása</p>
+<hr></hr>
+<p>Rendeléseit leadhatja a 06xxxxxxxx számon, de ha esetleg nem vagyunk elérhetőek, akkor nyugodtan rendeljen most online! Amint kollégáink értesülnek a rendeléséről, mihamarabb azon leszünk, hogy teljesítsük azt!</p>
+<h3 style = "color: #0c8cc7; margin-bottom: 0px">Cég adatok</h3>
+<div id = "CompanyInfo">
+	<div class = "CompanyInfoSection">
+		<div class = "LeftSection">
+			<p>Cég neve:</p>
+		</div>
+		<div class = "RightSection">
+			<input id = "CompanyName" class = "CompanyInfoInput">
+		</div>
+	</div>
+	<div class = "CompanyInfoSection">
+		<div class = "LeftSection">
+			<p>Megrendelő neve:</p>
+		</div>
+		<div class = "RightSection">
+			<input id = "CompanyPersonName" class = "CompanyInfoInput">
+		</div>
+	</div>
+	<div class = "CompanyInfoSection">
+		<div class = "LeftSection">
+			<p>Telefonszám:</p>
+		</div>
+		<div class = "RightSection">
+			<input id = "CompanyPhone" class = "CompanyInfoInput">
+		</div>
+	</div>
+	<div class = "CompanyInfoSection">
+		<div class = "LeftSection">
+			<p>E-mail cím:</p>
+		</div>
+		<div class = "RightSection">
+			<input id = "CompanyMail" class = "CompanyInfoInput">
+		</div>
+	</div>
+	<div class = "CompanyInfoSection">
+		<div class = "LeftSection">
+			<p>Cég címe:</p>
+		</div>
+		<div class = "RightSection">
+			<input id = "CompanyAddress" class = "CompanyInfoInput">
+		</div>
+	</div>
+</div>
+<div id = "OrderedProducts">
+	<h3 style = "color: #0c8cc7; margin-bottom: 0px">Termékek</h3>
+	<div class = "Product" id = "Product1">
+		<span style = "padding-right: 15px; padding-top: 4px">Csoport:</span>
+		<select id = "ProductGroup1" class = "ProductList" onchange = "LoadProductSelector(1)"></select>
+		<span style = "padding-right: 15px; padding-left: 15px; padding-top: 4px">Név:</span>
+		<select id = "ProductList1" class = "ProductList" onchange = "LoadProductColors(1)"></select>
+		<span style = "padding-left: 15px; padding-top: 4px">Mennyiség:</span>
+		<input type = "number" min = "1" max = "10000" id = "ProductAmount1" class = "ProductAmount"></input>
+		<span style = "padding-left: 15px; padding-top: 4px">Szín:</span>
+		<select id = "ProductColor1" class = "ProductList" style = "margin-left: 15px;"></select>
+		<span id = "OrderProductsAdd" class = "OrderProductsAdd" onclick = "OrderProductsAdd()">Hozzáad</span>	
+	</div>
+</div>
+<p id = "OrderError"></p>
+<p id = "OrderProducts" onclick = "OrderProducts()" class = "OrderProducts">Rendelés leadása</p>
+<div id = "LoadedProduct" style = "display:none;">
+</div>

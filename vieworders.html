@@ -1,0 +1,48 @@
+<p id = "PageTitle" style = "text-align: center">Rendelések</p>
+<hr></hr>
+<div style = "display: flex">
+	<div class = "LeftSection" style = "text-align: center">
+		<a style = "font-size: 18px">Kezdés dátuma:</a>
+		<input type="date" id="DateSelectorStart" class = "DateSelector" onchange = "LoadOrders(OrderSwitches[2], OrderSwitches[1], OrderSwitches[0])">
+	</div>
+	<div class = "RightSection" style = "text-align: center">
+		<a style = "font-size: 18px">Vég dátuma:</a>
+		<input type="date" id="DateSelectorEnd" class = "DateSelector" onchange = "LoadOrders(OrderSwitches[2], OrderSwitches[1], OrderSwitches[0])">
+	</div>
+</div>
+<div id = "OrdersSelector">
+	<div>
+	<input type = "checkbox" id = "OrdersNotSeen" onclick = "ChangeSwitchState(2)">
+	<div class = "box red"></div>
+	<span>Meg nem tekintett rendelések</span>
+	</div>	
+	<div>
+	<input type = "checkbox" id = "OrdersSeen" onclick = "ChangeSwitchState(1)">
+	<div class = "box yellow"></div>
+	<span>Megtekintett rendelések</span>
+	</div>
+	<div>
+	<input type = "checkbox" id = "OrdersCompleted" onclick = "ChangeSwitchState(0)">
+	<div class = "box green"></div>
+	<span>Teljesített rendelések</span>
+	</div>
+</div>
+<div id = "Orders">
+	
+</div>
+<div id = "OrdersData">
+	<p id = "PageTitle" style = "text-align: center">Elmúlt évek rendelései</p>
+	<div class = "YearDiv">
+		<div class = "YearDivSection">
+			<p class = "OrderInfoButton" style = "float:left" onclick = "ChangeYear(-1)">Vissza</p>
+		</div>
+		<div class = "YearDivSection">
+			<p id = "Year" style = "text-align: center; font-size: 24px"></p>
+		</div>
+		<div class = "YearDivSection">
+			<p class = "OrderInfoButton" style = "text-align: end" onclick = "ChangeYear(1)">A jövőbe</p>
+		</div>
+	</div>
+	<div id = "Diagram">
+	</div>
+</div>

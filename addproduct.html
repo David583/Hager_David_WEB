@@ -1,0 +1,141 @@
+<p id = "PageTitle" style = "text-align: center">Új termék hozzáadása</p>
+<hr> </hr>
+<div class = "NewProductSection">
+	<div class = "LeftSection">
+		<p style = "margin-top: 0px">Termék neve:</p>
+	</div>
+	<div class = "RightSection">
+		<input id = "NewProductName">
+	</div>
+</div>
+<div class = "NewProductSection">
+	<div class = "LeftSection">
+		<p style = "margin-top: 0px">Termék csoportja:</p>
+	</div>
+	<div class = "RightSection">
+		<select id = "NewProductGroup" class = "ProductList asd0"></select>
+	</div>
+</div>
+<div class = "NewProductSection">
+	<div class = "LeftSection">
+		<p style = "margin-top: 0px">Termék képe:</p>
+	</div>
+	<div id = "RightSection" style = "display: grid; margin-left: auto">
+		<image src = "resources/noimage.png" id = "ImagePreview">
+		<input type = "file"  onchange = "UploadNewProductImage(event)" id = "NewProductImage" accept = "image/*">
+	</div>
+</div>
+<div class = "NewProductSection" style = "height: 180px">
+	<div class = "RightSection">
+		<p style = "margin-top: 0px">Termék leírása:</p>
+	</div>
+	<div class = "LeftSection">
+		<textarea id = "NewProductInfo" rows = "10" cols = "40"></textarea>
+	</div>
+</div>
+<div id = "NewProductData" style = "padding-top: 20px">
+	<div id = "NewData1" class = "NewProductSection asd0">
+		<p>Adat név:</p>
+		<input class = "NewProductDataName" id = "NPDN1">
+		<p id = "ExtraMargin">Adat leírás:</p>
+		<input class = "NewProductDataValue" id = "NPDV1">
+		<button class = "NewProductDataAdd" id = "NewProductDataAdd1" onclick = "AddNewProductData(2)">+</button>
+	</div>
+</div>
+<div id = "NewProductColors">
+	<p class = "asd1">Elérhető színek:</p>
+	<table id = "ColorTable">
+		<tr>
+			<td> <div class = "box red"></div> </td>
+			<td> <div class = "box brown"></div> </td>
+			<td> <div class = "box orange"></div> </td>
+			<td> <div class = "box yellow"></div> </td>
+			<td> <div class = "box olive"></div> </td>
+			<td> <div class = "box green"></div> </td>
+			<td> <div class = "box cyan"></div> </td>
+			<td> <div class = "box blue"></div> </td>
+			<td> <div class = "box purple"></div> </td>
+			<td> <div class = "box pink"></div> </td>
+			<td> <div class = "box white"></div> </td>
+			<td> <div class = "box gray"></div> </td>
+			<td> <div class = "box black"></div> </td>
+		</tr>
+		<tr>
+			 <td> <input type = "checkbox"  id = "color1"> </td>
+			 <td> <input type = "checkbox"  id = "color2"> </td>
+			 <td> <input type = "checkbox"  id = "color3"> </td>
+			 <td> <input type = "checkbox"  id = "color4"> </td>
+			 <td> <input type = "checkbox"  id = "color5"> </td>
+			 <td> <input type = "checkbox"  id = "color6"> </td>
+			 <td> <input type = "checkbox"  id = "color7"> </td>
+			 <td> <input type = "checkbox"  id = "color8"> </td>
+			 <td> <input type = "checkbox"  id = "color9"> </td>
+			 <td> <input type = "checkbox"  id = "color10"> </td>
+			 <td> <input type = "checkbox"  id = "color11"> </td>
+			 <td> <input type = "checkbox"  id = "color12"> </td>
+			 <td> <input type = "checkbox"  id = "color13"> </td>
+		</tr>
+	</table>
+	<table id = "ColorTableFlip">
+		<tr>
+			<td> <div class = "box red"></div> </td>
+			<td> <input type = "checkbox"  id = "hcolor1"> </td>
+		</tr>
+		<tr>
+			<td> <div class = "box brown"></div> </td>
+			<td> <input type = "checkbox"  id = "hcolor1"> </td>
+		</tr>
+		<tr>
+			<td> <div class = "box orange"></div> </td>
+			<td> <input type = "checkbox"  id = "hcolor1"> </td>
+		</tr>
+		<tr>
+			<td> <div class = "box yellow"></div> </td>
+			<td> <input type = "checkbox"  id = "hcolor1"> </td>
+		</tr>
+		<tr>
+			<td> <div class = "box olive"></div> </td>
+			<td> <input type = "checkbox"  id = "hcolor1"> </td>
+		</tr>
+		<tr>
+			<td> <div class = "box green"></div> </td>
+			<td> <input type = "checkbox"  id = "hcolor1"> </td>
+		</tr>
+		<tr>
+			<td> <div class = "box cyan"></div> </td>
+			<td> <input type = "checkbox"  id = "hcolor1"> </td>
+		</tr>
+		<tr>
+			<td> <div class = "box blue"></div> </td>
+			<td> <input type = "checkbox"  id = "hcolor1"> </td>
+		</tr>
+		<tr>
+			<td> <div class = "box purple"></div> </td>
+			<td> <input type = "checkbox"  id = "hcolor1"> </td>
+		</tr>
+		<tr>
+			<td> <div class = "box pink"></div> </td>
+			<td> <input type = "checkbox"  id = "hcolor1"> </td>
+		</tr>
+		<tr>
+			<td> <div class = "box white"></div> </td>
+			<td> <input type = "checkbox"  id = "hcolor1"> </td>
+		</tr>
+		<tr>
+			<td> <div class = "box gray"></div> </td>
+			<td> <input type = "checkbox"  id = "hcolor1"> </td>
+		</tr>
+		<tr>
+			<td> <div class = "box black"></div> </td>
+			<td> <input type = "checkbox"  id = "hcolor1"> </td>
+		</tr>
+	</table>
+</div>
+<div id = "AddNewProductError">
+	<p id = "AddNewProductErrorMessage"></p>
+</div>
+<div id = "AddNewProductButtonDiv">
+	<button id = "AddNewProductButton" onclick = "AddNewProduct()">Új termék hozzáadása</button>
+</div>
+<div id = "EditProduct">NotLoaded
+</div>

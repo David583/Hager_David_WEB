@@ -1,0 +1,49 @@
+.box {
+	margin: 0px;
+	margin-bottom: -4px;
+	margin-left: 4px;
+	margin-right: 4px;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border: 1px solid rgba(0, 0, 0, .2);
+}
+.yellow {
+	background-color: yellow;
+}
+.blue {
+	background-color: blue;
+}
+.red {
+	background-color: red;
+}
+.green {
+	background-color: green;
+}
+.white {
+	background-color: white;
+}
+.black {
+	background-color: black;
+}
+.orange {
+	background-color: orange;
+}
+.cyan {
+	background-color: cyan;
+}
+.purple {
+	background-color: purple;
+}
+.brown {
+	background-color: brown;
+}
+.pink {
+	background-color: pink;
+}
+.gray {
+	background-color: gray;
+}
+.olive {
+	background-color: olive;
+}

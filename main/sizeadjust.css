@@ -1,0 +1,173 @@
+@media screen and (max-width: 840px) {
+    #MainBody {
+        margin: 0px;
+        margin-top: -5px;
+    }
+	#NavBar {
+        display: inline-block;
+        text-align: center;
+        position: static;
+    }
+    #NavBar div {
+        width: 100%;
+        display: grid;
+        justify-items: center;
+    }
+    #NavBar a {
+        margin: 5px 0px;
+    }
+    #NavBar img {
+        margin: 10px 0px;
+    }
+    #LoginMenuWindow {
+        position: inherit;
+        margin-top: -10px;
+    }
+    .MainText {
+        font-size: 42px;
+    }
+    .MainTextUnder {
+        font-size: 20px;
+        margin-top: 5px;
+    }
+    #Images {
+        display: list-item;
+        list-style-type: none;
+    }
+    .MainImage {
+        width: 100%;
+        height: 260px;
+        margin: 0px;
+    }
+    .MainInfo {
+        display: block;
+    }
+    .MainFrame {
+        width: 100%;
+    }
+    .MainInfo iframe {
+        margin: 0px;
+        width: 320px;
+        height: 320px;
+    }
+    .Infoasd {
+        width: 100%;
+    }
+    #ProductsSearch {
+        display: grid;
+        justify-items: center;
+    }
+    #ProductsSearchBar {
+        width: 100%;
+        padding-left: 0px;
+    }
+    #ProductsSearchButton {
+        margin-top: 10px;
+    }
+    #CompanyInfo {
+        display: grid;
+        justify-content: center;
+        text-align: center;
+    }
+    #CompanyInfo p {
+        margin: 0px 0px 10px 0px;
+    }
+    .CompanyInfoSection {
+        display: block;
+    }
+    .LeftSection {
+        width: 100%;
+    }
+    .RightSection {
+        width: 100%;
+    } 
+    h3 {
+        text-align: center;
+    }
+    .Product {
+        display: grid;
+        justify-items: center;
+    }
+    .OrderProductsAdd {
+        float: none;
+        margin-left: 0px;
+        margin-top: 15px;
+    }
+    .OrderProductsRemove {
+        float: none;
+        margin-left: 0px;
+        margin-top: 15px;
+    }
+    .OrderProducts {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .NewProductSection {
+        display: inline-block;
+        text-align: center;
+    }
+    #NewProductName {
+        margin-left: 0px;
+    }
+    #NewProductGroup {
+        float: none;
+    }
+    #ImagePreview {
+        margin-left: 4%;
+    }
+    #NewProductInfo {
+        margin-left: 0px;
+    }
+    #AddNewProductButtonDiv {
+        display:block;
+    }
+    .NewProductDataName {
+        margin-left: 0px;
+    }
+    .NewProductDataValue {
+        margin-left: 0px;
+    }
+    #NewProductColors {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
+    .asd1 {
+        text-align: center;
+        width: unset;
+        margin: revert;
+    }
+    #ColorTable {
+        display: none;
+    }
+    #ColorTableFlip {
+        display: inline-table;
+    }
+    .OrderInfo {
+        display: grid;
+    }
+    .OrderInfoList {
+        display: flow-root;
+        margin-top: 20px;
+    }
+    .OrderInfoButton {
+        text-align: center;
+    }
+    #NewAdmin {
+        display: block;
+        text-align: center;
+    }
+    #NewAdminButton {
+        float: unset;
+    }
+    #NewGroupName {
+        margin-bottom: 10px;
+    }
+    #NewAdminPassword {
+        margin-bottom: 10px;
+    }
+    #LoadingScreenImage {
+        width: 100%;
+        height: 300px;
+    }
+}

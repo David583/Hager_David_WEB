@@ -1,0 +1,402 @@
+td {
+	border: 3px solid #39a2b8;
+    padding-top: 5px;
+	padding-bottom: 9px;
+}
+.NewProductSection {
+	margin-top: 20px;
+	display: flex;
+	width: 100%;
+}
+.LeftSection {
+	width: 50%;
+}
+.RightSection {
+	width: 50%;
+	margin-left: auto;
+}
+#ImagePreview {
+	width: 300px;
+	height: 300px;
+}
+#NewProductName {
+	width: 300px;
+	float: right;
+	border: 5px outset #1DCDDA;
+	border-radius: 31px;
+	height: 25px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+#NewProductImage {
+	margin-left: auto;
+	padding-top: 10px;
+}
+#NewProductInfo {
+	float: right;
+	border: 5px outset #1DCDDA;
+	border-radius: 31px;
+	padding: 10px;
+	width: 300px;
+	resize: none;
+}
+.NewProductDataAdd {
+	background:linear-gradient(to bottom, #05d3e6 5%, #156dd9 100%);
+	background-color:#05d3e6;
+	border-radius:28px;
+	border:1px solid #3594b3;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:28px;
+	font-weight:bold;
+	padding:4px inherit;
+	margin-top: 13px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #235adb;
+	float:right;
+	margin-left: auto;
+}
+.NewProductDataRemove {
+	background:linear-gradient(to bottom, #f52c3a 5%, #e60e0e 100%);
+	background-color:#f52c3a;
+	border-radius:28px;
+	border:1px solid #6b0a0a;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:28px;
+	font-weight:bold;
+	padding:1px 11px;
+	margin-top: 11px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #3d768a;
+	float: right;
+	margin-left: auto;
+}
+.NewProductDataName {
+	width: 30%;
+	margin-left: 10px;
+	border: 5px outset #1DCDDA;
+	border-radius: 31px;
+	height: 25px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 10px;
+}
+.NewProductDataValue {
+	width: 30%;
+	margin-left: 10px;
+	border: 5px outset #1DCDDA;
+	border-radius: 31px;
+	height: 25px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 10px;
+}
+#NewProductColors {
+	display: flex;
+	padding-top: 20px;
+	width: 100%;
+}
+#ColorTable {
+	width: 85%;
+	border: 5px solid #39a2b8;
+	border-collapse: collapse;
+	background-color: #dedede;
+	text-align: center;
+}
+#ColorTableFlip {
+	width: 60%;
+	border: 5px solid #39a2b8;
+	border-collapse: collapse;
+	background-color: #dedede;
+	text-align: center;
+	display: none;
+}
+#AddNewProductButton {
+	box-shadow: 0px 1px 0px 0px #f0f7fa;
+	background:linear-gradient(to bottom, #61d8ff 5%, #0daae3 100%);
+	background-color:#61d8ff;
+	border-radius:6px;
+	border:1px solid #4ba9e3;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+	padding:13px 76px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #5b6178;
+	margin-top: 30px;
+}
+#AddNewProductButtonDiv  {
+	display: flex;
+	justify-content: center;
+}
+#AddNewProductError {
+	display: flex;
+	justify-content: center;
+	color: red;
+	font-size: 22px;
+}
+#ExtraMargin {
+	margin-left: 7%;
+}
+.SimpleTable {
+	width: 100%;
+	border-collapse: collapse;
+	border: 1px solid black;
+	text-align: center;
+	user-select: none;
+	cursor: default;
+}
+.SimpleTableEdit:hover {
+	background: lightyellow;
+	transition-duration: 1s;
+	cursor: pointer;
+}
+.SimpleTableDelete:hover {
+	background: pink;
+	transition-duration: 1s;	
+	cursor: pointer;
+}
+.SimpleTableTitle:hover {
+	background: lightgrey;
+	transition-duration: 1s;
+}
+.SimpleTable tr:hover td:not(:hover) {
+	background: lightgrey;
+	transition-duration: 1s;	
+}
+#MessageBox {
+	background-color: white;
+	border: 9px outset #33BDC8;
+	border-radius: 15px;
+	text-align: center;
+	font-size:19px;
+	position: absolute;
+	padding: 0px 70px;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	width: 60%;
+	top: 20%;
+	z-index: 20;
+	display: none;
+	animation: MoveMessageBox 1.5s;
+	animation-fill-mode: forwards;
+}
+#Answers {
+	display: ruby;
+}
+#AnswerYes {
+	background:linear-gradient(to bottom, #44c767 5%, #49b011 100%);
+	background-color:#44c767;
+	border-radius:26px;
+	border:4px solid #1bbf2b;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	padding:13px 36px;
+	text-decoration:none;
+	margin-right: 30px;
+}
+#AnswerYes:hover {
+	background:linear-gradient(to bottom, #49b011 5%, #44c767 100%);
+	background-color:#49b011;
+}
+#AnswerNo {
+	background:linear-gradient(to bottom, #ed7a70 5%, #e32416 100%);
+	background-color:#ed7a70;
+	border-radius:26px;
+	border:4px solid #ed2b1d;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	padding:13px 36px;
+	text-decoration:none;
+	margin-left: 30px;
+}
+#AnswerNo:hover {
+	background:linear-gradient(to bottom, #e32416 5%, #ed7a70 100%);
+	background-color:#e32416;
+}
+#EditProduct {
+	display: none;
+}
+.DateSelector {
+	margin-left: 10px;
+	user-select: none;
+}
+.OrderInfo {
+	border-radius: 22px;
+	padding: 10px 20px 10px 20px;
+	margin-top: 30px;
+	padding-bottom: 35px;
+}
+.OrderInfoName {
+	margin: 0px;
+	color: darkred;
+	font-size: 21px;
+}
+.OrderInfoHighLight {
+	font-weight: bold;
+	font-size: 18px;
+}
+.OrderInfoList {
+	margin-top: -4px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	display: inline-flex;
+}
+.OrderInfoList li {
+	padding-right: 20px;
+	margin-right: 10px;
+}
+.OrderInfoButton {
+	background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+	background-color:#ededed;
+	border-radius:15px;
+	border:1px solid #d6bcd6;
+	display:inline-block;
+	cursor:pointer;
+	color:#706f70;
+	font-family:Arial;
+	font-size:16px;
+	font-weight:bold;
+	padding:4px 15px;
+	text-decoration:none;
+	float: right;
+	margin-left: 15px;
+}
+.OrderInfoButton:hover {
+	background:linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
+	background-color:#bab1ba;
+}
+.OrderInfoButton:active {
+	position:relative;
+	top:1px;
+}
+.OrderNotSeen {
+	background-color: #f8b8b8;
+	border: 9px outset #CD5E5E;
+}
+.OrderSeen {
+	background-color: #f2f599;
+    border: 9px outset #BCBF5C;
+}
+.OrderCompleted {
+	background-color: #65e485;
+	border: 9px outset #4DB33E;
+}
+#OrdersSelector {
+	text-align: center;
+	margin-top: 20px;
+}
+#OrdersSelector span {
+	margin-right: 10px;
+}
+.YearDiv {
+	display: flex;
+	width: 100%;
+}
+.YearDivSection {
+	width: 33.33%;
+	margin: 0px;
+}
+.YearDivSection p {
+	margin: 0px;
+}
+#Diagram {
+	border: 14px solid #2a6770;
+	margin-top: 10px;
+}
+#NewAdmin {
+	display: flex;
+	padding-bottom: 20px;
+	margin-top: 20px;
+}
+#NewAdminButton {
+	margin-left: auto;
+	float: right;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+#NewAdminName {
+	width: 250px;
+	margin: 0px;
+	margin-left: 30px;
+	margin-right: 30px;
+}
+#NewAdminPassword {
+	width: 250px;
+	margin: 0px;
+	margin-left: 30px;
+	margin-right: 30px;
+}
+.asd0 {
+	float: right;
+}
+.asd1 {
+	width: 15%;
+	margin: 0px;
+}
+
+
+@keyframes MoveMessageBox {
+	from {top: -100%;}
+	to {top: 20%;}
+}
+
+
+@media (max-width: 768px) {
+	.NewProductSection {
+		display: inline-block;
+		width: 100%;
+	}
+	.NewProductSection p {
+		text-align: center;
+	}
+	#ExtraMargin {
+		margin-left: 0px;
+	}
+	#NewProductName {
+		float: none;
+		width: 70%;
+		margin-left: 15%;
+	}
+	#NewProductImage {
+		float: none;
+		margin-left: 25%;
+	}
+	#NewProductInfo {
+		width: 70%;
+		margin-left: 15%;
+		float: none;
+		margin-bottom: 25px;
+	}
+	.NewProductDataName {
+		width: 70%;
+		margin-left: 15%;
+		float: none;
+	}
+	.NewProductDataValue {
+		width: 70%;
+		margin-left: 15%;
+		float: none;
+	}
+	.NewProductDataAdd {
+		display: flex;
+		float: none;
+		margin: 12px auto;
+	}
+	.NewProductDataRemove {
+		display: flex;
+		float: none;
+		margin: 12px auto 0px auto;
+	}
+}
